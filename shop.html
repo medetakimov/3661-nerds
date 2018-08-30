@@ -14,7 +14,7 @@
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="shop.html">Магазин</a></li>
+        <li class="current"><a href="shop.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -28,13 +28,14 @@
 	<main>
 		<h1>Магазин готовых шаблонов</h1>
 
-		<section>
+		<section class="filters">
 			<h2 class="visually-hidden">Фильтр шаблонов</h2>
 
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
 				<fieldset>
 					<legend>Стоимость:</legend>
+          <input type="range" min="0" max="15000" step="1">
 					<label>От<input type="text" value="0"></label>
 					<label>До<input type="text" value="15000"></label>
 				</fieldset>
@@ -43,11 +44,11 @@
 					<legend>Сетка:</legend>
 					<ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" value="adaptive" id="filter-adaptive">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio"  value="fixed" id="filter-fixed">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="filter-option">
@@ -61,7 +62,7 @@
           <legend>Особенности:</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
             <li class="filter-option">
@@ -69,7 +70,7 @@
               <label for="filter-advantage">Блок преимуществ</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
             <li class="filter-option">
@@ -88,38 +89,35 @@
 			</form>
 		</section>
 
-    <div class="header-find">
 
-      <div class="sort-text">
-        <div class="sort-nav">
-          <p class="sort">Сортировать:</p>
 
-            <ul class="menu-sort">
-              <li class="nav-sort nav-sort-active"><a href="#">По цене</a></li>
-              <li class="nav-sort"><a href="#">По типу</a></li>
-              <li class="nav-sort"><a href="#">По названию</a></li>
-            </ul>
+		<section class="catalog">
+      <h2 class="visually hidden">Список шаблонов</h2>
 
-            <ul class="up-and-down">
-              <li class="up">
+      <div class="header-find">
+        <div class="sort-text">
+          <div class="sort-nav">
+            <p class="sort">Сортировать:</p>
+
+              <ul class="menu-sort">
+                <li class="nav-sort nav-sort-active"><a href="#">По цене</a></li>
+                <li class="nav-sort"><a href="#">По типу</a></li>
+                <li class="nav-sort"><a href="#">По названию</a></li>
+              </ul>
+
+              <div class="sort-direction">
                 <button class="up-button" type="button"><span class="visually-hidden">По возрастанию</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
                   </svg>
                 </button>
-              </li>
-              <li class="down">
                 <button class="down-button" type="button"><span class="visually-hidden">По убыванию</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                 </button>
-              </li>
-            </ul>
+              </div>
 
+          </div>
         </div>
       </div>
-    </div>
-
-		<section class="catalog">
-      <h2 class="visually hidden">Список шаблонов</h2>
 
       <ul class="catalog-list">
 
@@ -144,7 +142,7 @@
         <li class="catalog-item">
           <a href="#">
             <img src="img/img-barbershop.jpg" width="360" height="576"  alt="Barbershop">
-          </a>>
+          </a>
           <h3 class="catalog-item-title">Barbershop</h3>
           <p>Сайт салона красоты. Для мужчин, да.</p>
           <a class="catalog-button" href="#">9 900 руб.</a>
@@ -178,14 +176,14 @@
         </li>
       </ul>
 
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
-      </ul>
-
     </section>
+
+    <ul class="pagination-list">
+      <li class="pagination-item pagination-item-current"><a>1</a></li>
+      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+    </ul>
 
 	</main>
 
@@ -193,25 +191,10 @@
     <div class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <h2>Nerds Design Studio</h2>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. +7 (812) 275-75-75</p>
+      <h3>Nerds Design Studio</h2>
+      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      тел. +7 (812) 275-75-75</p>
       <a class="button" href="#">Напишите нам</a>
-    </div>
-
-    <div class="container-map">
-      <form class="pop-up" action="https://echo.htmlacademy.ru" method="post">
-        <label> Ваше имя:
-          <input type="text" name="username" placeholder="Имя Фамилия">
-        </label>
-        <label> Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com">
-        </label>
-        <label> Текст письма:
-          <textarea name="text" rows="10" cols="90" placeholder="Текст письма в свободной форме"></textarea>
-        </label>
-        <input type="submit" value="Отправить">
-      </form>
     </div>
 
     <div class="lower-footer">
@@ -228,7 +211,22 @@
       </div>
     </div>
 
-    </footer>
+  </footer>
+
+  <div class="pop-up">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label> Ваше имя:
+        <input type="text" name="username" placeholder="Имя Фамилия">
+      </label>
+      <label> Ваш e-mail:
+        <input type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label> Текст письма:
+        <textarea name="text" rows="10" cols="90" placeholder="Текст письма в свободной форме"></textarea>
+      </label>
+      <button type="submit" value="Отправить"></button> >
+    </form>
+  </div>
 
 </body>
 </html>
