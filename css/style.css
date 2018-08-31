@@ -1,0 +1,128 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #a6a6a6;
+}
+
+.slide-title h3 {
+  font-family: "Roboto";
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slide-title p {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.feature-item h3 {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.feature-item p {
+  font-family: "Roboto";
+  font-weight: normal;
+  line-height: 22px;
+  color: #283136;
+}
+
+.left-column b {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.left-column p {
+  font-family: "Roboto";
+  line-height: 24px;
+  color: #283136;
+  font-weight: normal;
+}
+
+.we-can p,
+.statistics-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
