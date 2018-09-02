@@ -1,14 +1,12 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
-  color: #283136;
-
-  background-color: #ffffff;
+  font-weight: 400;
+  color: #000000;
 }
 
 a {
@@ -24,8 +22,8 @@ a {
   top: 0;
 }
 
-ul {
-  list-style: none;
+header, .slider {
+  background-color: #eeeeee;
 }
 
 .site-navigation,
@@ -48,6 +46,10 @@ ul {
 .site-navigation a:active,
 .user-navigation a:active {
   color: #a6a6a6;
+}
+
+.slide {
+  list-style: none;
 }
 
 .slide-title h3 {
@@ -88,14 +90,36 @@ ul {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.feature-item h3 {
+.features-list {
+  list-style: none;
+}
+
+.features a {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.web-sites a {
+  background-color: #fb565a;
+}
+
+.apps a {
+  background-color: #00ca74;
+}
+
+.presentations a {
+  background-color: #efc84a;
+}
+
+.feature-list h3 {
   font-family: "Roboto";
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.feature-item p {
+.feature-list p {
   font-family: "Roboto";
   font-weight: normal;
   line-height: 22px;
@@ -125,4 +149,128 @@ ul {
   color: #000000;
 }
 
+.statistics-list {
+  list-style: none;
+}
 
+.value {
+  font-weight: bold;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.footer-slogan b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-slogan p {
+  line-height: 22px;
+}
+
+.footer-contacts h3 {
+  text-transform: uppercase;
+}
+
+.pop-up label {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.main-header h1 {
+  text-align: center;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.filter-button {
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sort {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-sort {
+  list-style: none;
+}
+
+.nav-sort a {
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.sorting-item:hover,
+.sorting-item:focus {
+  color: #000000;
+}
+
+.catalog-item {
+  list-style: none;
+  text-align: center;
+}
+
+.catalog-item-title {
+  color: #000000;
+  font-weight: bold;
+}
+
+.catalog-item-info {
+  background-color: #eeeeee;
+  color: #666666;
+}
+
+.catalog-button {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: #000000;
+  background-color: #eeeeee;
+  line-height: 18px;
+  text-align: center;
+}
