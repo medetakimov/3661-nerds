@@ -1,14 +1,15 @@
 /* СТИЛИЗАЦИЯ ГЛАВНОЙ СТРАНИЦЫ INDEX */
 
 body {
-  min-width:1200px;
   margin: 0;
   padding: 0;
+  min-width:1200px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: normal;
   color: #000000;
+  background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -18,6 +19,17 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /*Главная навигация меню*/
@@ -44,10 +56,6 @@ body {
 .user-navigation {
   padding: 0;
   list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .main-header-logo:hover{
@@ -80,12 +88,11 @@ a {
 
 /*Слайдер*/
 
-
 .slider {
-  padding: 0;
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  margin-bottom: 80px;
+
+  background-color: #eeeeee;
 }
 
 .slide {
@@ -132,6 +139,7 @@ a {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 .features {
@@ -362,8 +370,18 @@ a {
   box-sizing: border-box;
 }
 
-.filter {
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
 
+}
+
+.filters {
+  width: 262px;
+}
+
+.filter {
+  margin-top: 15px;
 }
 
 .filter fieldset {
@@ -394,12 +412,28 @@ legend {
 }
 
 .sort {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+  margin-bottom: 45px;
+}
+
+.sorting-title {
+  width: 360px;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.sorting-tools {
+  width: 360px;
+  justify-content: space-between;
+}
+
 .menu-sort {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
   list-style: none;
 }
 
@@ -413,7 +447,22 @@ legend {
   color: #000000;
 }
 
+.catalog {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
 .catalog-item {
+  width: 360px;
+  margin-bottom: 28px;
+  margin-right: 20px;
   list-style: none;
   text-align: center;
 }
@@ -434,6 +483,8 @@ legend {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
