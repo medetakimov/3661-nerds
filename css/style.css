@@ -114,7 +114,8 @@ img {
 }
 
 .cart-link {
-  padding-left: 85px;
+  position: relative;
+  padding-left: 40px;
   padding-right: 0px;
   margin: 0;
 }
@@ -123,8 +124,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 80px;
-  right: 190px;
+  top: 7px;
+  left: 0;
 
   width: 15px;
   height: 15px;
@@ -199,7 +200,7 @@ img {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 10px;
+  background-position: 100% 0px;
 }
 
 .slider-item:nth-child(2) {
@@ -480,10 +481,7 @@ img {
 
 .client-item {
   position: relative;
-  width: 260px;
   text-align: center;
-
-  opacity: 0.2;
 }
 
 .client-item:not(:last-of-type)::after {
@@ -505,11 +503,15 @@ img {
   height: 90px;
 }
 
-.client-item:hover {
+.client-item img {
+  opacity: 0.2;
+}
+
+.client-item img:hover {
   opacity: 1;
 }
 
-.client-item:active {
+.client-item img:active {
   opacity: 0.1;
 }
 
@@ -526,6 +528,7 @@ img {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
 }
 
 .footer-contacts {
@@ -1183,4 +1186,14 @@ img {
   height: 50px;
   text-align: center;
   text-transform: uppercase;
+}
+
+/* Поп-ап блок*/
+
+.pop-up {
+  display: none;
+}
+
+.pop-up .show {
+  display: block;
 }
