@@ -114,31 +114,34 @@
           </table>
         </div>
       </section>
-      <section class="clients container">
+      <div class="container">
+        <section class="clients">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <ul class="our-clients">
           <li class="client-item">
-            <a class="clients-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="clients-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
               <img src="img/logo-1.png" width="260" height="180" alt="HTML Academy">
             </a>
           </li>
           <li class="client-item">
-            <a class="clients-link" href="#">
+            <a class="clients-link" href="#" target="_blank">
               <img src="img/logo-2.png" width="260" height="180" alt="Barbershop «Borodinskiy»">
             </a>
           </li>
           <li class="client-item">
-            <a class="clients-link" href="#">
+            <a class="clients-link" href="#" target="_blank">
               <img src="img/logo-3.png" width="260" height="180" alt="«Pink»">
             </a>
           </li>
           <li class="client-item">
-            <a class="clients-link" href="#">
+            <a class="clients-link" href="#" target="_blank">
               <img src="img/logo-4.png" width="260" height="180" alt="«Mishka»">
             </a>
           </li>
         </ul>
       </section>
+      </div>
+
     </main>
     <footer class="main-footer">
       <div class="map">
@@ -191,15 +194,16 @@
         </p>
         <p class="write-us-item">
           <label for="mail">Ваш e-mail:</label>
-          <input class="fix" id="mail" type="text" name="name" value="" placeholder="email@example.com">
+          <input class="fix" id="mail" type="text" name="mail" value="" placeholder="email@example.com">
         </p>
         <p class="write-us-item">
           <label for="free-form">Текст письма:</label><br>
-          <textarea class="fix" id="free-form" rows="5" cols="50" name="..."></textarea>
+          <textarea class="fix" id="free-form" rows="5" cols="50" name="textarea" placeholder="В свободной форме"></textarea>
         </p>
         <button class="pop-up-submit" type="submit">Отправить</button>
       </form>
       <button class="pop-up-close" type="button">Закрыть</button>
     </div>
+    <script src="js/pop-up.js"></script>
 </body>
 </html>
