@@ -148,7 +148,7 @@
             <h4>Nerds Design Studio</h4>
             <p class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
             <p class="tel-number"> тел. +7 (812) 275-75-75</p>
-            <a class="button footer-contacts-button" href="#">Напишите нам</a>
+            <a class="button footer-contacts-button pop-up-open" href="#">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -181,23 +181,25 @@
         </div>
       </div>
     </footer>
-    <div class="pop-up">
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <button class="btn-close">Закрыть форму обратной связи</button>
-      <p class="write-us-item">
-        <label for="name">Ваше имя:</label>
-        <input class="fix" id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
-      </p>
-      <p class="write-us-item">
-        <label for="mail">Ваш e-mail:</label>
-        <input class="fix" id="mail" type="text" name="name" value="" placeholder="email@example.com">
-      </p>
-      <p class="write-us-item">
-        <label for="free-form">Текст письма:</label><br>
-        <textarea class="fix" id="free-form" rows="5" cols="50" name="..."></textarea>
-      </p>
-      <button class="write-us-send" type="submit">Отправить</button>
-    </form>
+    <div class="pop-up pop-up-main">
+      <h2 class="visually-hidden">Форма связи с дизайн-студией</h2>
+      <div class="write-us">Напишите нам</div>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us-item">
+          <label for="name">Ваше имя:</label>
+          <input class="fix" id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us-item">
+          <label for="mail">Ваш e-mail:</label>
+          <input class="fix" id="mail" type="text" name="name" value="" placeholder="email@example.com">
+        </p>
+        <p class="write-us-item">
+          <label for="free-form">Текст письма:</label><br>
+          <textarea class="fix" id="free-form" rows="5" cols="50" name="..."></textarea>
+        </p>
+        <button class="pop-up-submit" type="submit">Отправить</button>
+      </form>
+      <button class="pop-up-close" type="button">Закрыть</button>
     </div>
 </body>
 </html>
