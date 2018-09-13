@@ -81,7 +81,14 @@ img {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 0px;
+
+  width: 444px;
+  margin: 0;
+  margin-right: 236px;
+  margin-left: 204px;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 4px;
 }
 
 .site-navigation li {
@@ -94,17 +101,21 @@ img {
 
 .user-navigation {
   display: flex;
-  min-width: 160px;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
 }
 
 .user-navigation a {
-  padding-left: 84px;
+  padding-left: 41px;
 }
 
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding-top: 12px;
+  padding-top: 8px;
   color: #000000;
 }
 
@@ -122,15 +133,15 @@ img {
   position: relative;
   margin: 0;
   padding-left: 40px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .cart-link::before {
   content: "";
 
   position: absolute;
-  top: 20px;
-  left: 46px;
+  top: 17px;
+  left: 2px;
 
   width: 15px;
   height: 15px;
@@ -205,7 +216,7 @@ img {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 100% 0px;
+  background-position: 100% 0;
 }
 
 .slider-item:nth-child(2) {
@@ -414,8 +425,8 @@ img {
 }
 
 .order-list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style:none;
 }
 
@@ -584,14 +595,6 @@ img {
   border: none;
   text-align: center;
   vertical-align: middle;
-}
-
-.footer-contacts-button {
-  width: 219px;
-  height: 50px;
-  background-color: #fb565a;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .lower-footer {
@@ -817,6 +820,10 @@ img {
 .filter-input:hover + label,
 .filter-input:focus + label {
   color: #000000;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.3;
 }
 
 .filter-input-radio + label::before {
@@ -1066,6 +1073,7 @@ img {
 
 .catalog-item:hover > .catalog-item-info {
   display: flex;
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
 .catalog-item:nth-child(2n) {
@@ -1073,7 +1081,12 @@ img {
 }
 
 .catalog-item:hover > .catalog-header {
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
   opacity: 1;
+}
+
+.catalog-item:hover > .catalog-img {
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
 .catalog-header {
@@ -1087,6 +1100,25 @@ img {
   background-position: 0 0;
 
   opacity: 0.12;
+}
+
+.catalog-item-info {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 230px;
+  padding: 0;
+  margin: 0;
+
+  top: 385px;
+  left: 0;
+
+  background-color: #eeeeee;
+  color: #000000;
+
+  box-sizing: border-box;
 }
 
 .catalog-item-info {
@@ -1133,19 +1165,10 @@ img {
   font-weight: bold;
 }
 
-.catalog-item-info .button {
+.price-button {
   width: 200px;
   margin: 0 auto;
   background-color: #fb565a;
-}
-
-.item-description .button:hover {
-  background-color: #e74246;
-}
-
-.item-description .button:active {
-  background-color: #d7373b;
-  color: rgba(255, 255, 255, 1);
 }
 
 /* Пагинация */
@@ -1177,6 +1200,7 @@ img {
   box-sizing: border-box;
 }
 
+.pagination-item a:focus,
 .pagination-item a:hover {
   background-color: #dfdfdf;
   border: 3px solid #dfdfdf;
@@ -1209,10 +1233,12 @@ img {
 
 .pop-up {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  top: 2440px;
-  left: 50%;
+/*top: 2440px;*/
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
 
   width: 760px;
   margin-left: -480px;
@@ -1223,10 +1249,6 @@ img {
 
   background-color: #fff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
-}
-
-.pop-up-main {
-  top: 1705px;
 }
 
 .pop-up-show {
@@ -1241,6 +1263,9 @@ img {
 .pop-up-open {
   min-width: 219px;
   min-height: 20px;
+  margin: 0;
+  background-color: #fb565a;
+  box-sizing: border-box;
 }
 
 .pop-up-close {
@@ -1394,26 +1419,22 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -2000px);
   }
 
   70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -20%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -1421,13 +1442,13 @@ img {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-51%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-49%, -50%);
   }
 }
