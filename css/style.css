@@ -140,7 +140,7 @@ img {
   content: "";
 
   position: absolute;
-  top: 17px;
+  top: 14px;
   left: 2px;
 
   width: 15px;
@@ -929,7 +929,7 @@ img {
 
 .filter-button:active {
   background-color: #d5d5d5;
-  color: #000000;
+  color: #959595;
   opacity: 0.3;
 }
 
@@ -1050,13 +1050,10 @@ img {
 
 /* Каталог готовых шаблонов */
 
-.catalog {
-  width: 760px;
-}
-
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  width: 760px;
   margin: 0;
   padding: 0;
   margin-bottom: 26px;
@@ -1064,15 +1061,22 @@ img {
 
 .catalog-item {
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
   width: 360px;
-  margin-bottom: 28px;
+  margin-bottom: 35px;
   margin-right: 40px;
+  padding-top: 40px;
   list-style: none;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .catalog-item:hover > .catalog-item-info {
   display: flex;
+}
+
+.catalog-item:hover {
   box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
@@ -1080,26 +1084,26 @@ img {
   margin-right: 0;
 }
 
-.catalog-item:hover > .catalog-header {
-  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
-  opacity: 1;
-}
-
 .catalog-item:hover > .catalog-img {
   box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
-.catalog-header {
-  display: flex;
-  align-items: center;
+.catalog-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+
   width: 360px;
   height: 40px;
 
-  background-image: url("../img/browser.svg");
+  opacity: 0.12;
+  background-image: url('../img/browser.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
+}
 
-  opacity: 0.12;
+.catalog-item:hover::before {
+  opacity: 1;
 }
 
 .catalog-item-info {
@@ -1112,27 +1116,8 @@ img {
   padding: 0;
   margin: 0;
 
-  top: 385px;
   left: 0;
-
-  background-color: #eeeeee;
-  color: #000000;
-
-  box-sizing: border-box;
-}
-
-.catalog-item-info {
-  display: none;
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
-  width: 360px;
-  height: 230px;
-  padding: 0;
-  margin: 0;
-
-  top: 385px;
-  left: 0;
+  bottom: 0;
 
   background-color: #eeeeee;
   color: #000000;
@@ -1235,13 +1220,12 @@ img {
   display: none;
   position: fixed;
   z-index: 2;
-/*top: 2440px;*/
   top: 50%;
-  left: 90%;
+  left: 50%;
   transform: translate(-50%, -50%);
 
   width: 760px;
-  margin-left: -480px;
+  margin-left: 0;
   padding-top: 69px;
   padding-right: 100px;
   padding-bottom: 84px;
@@ -1355,10 +1339,15 @@ img {
   resize: none;
 }
 
+.write-us-item input::placeholder {
+  align-items: center;
+}
+
 .write-us-item input::placeholder,
 .write-us-item textarea::placeholder {
   font-size: 16px;
   line-height: 18px;
+  align-items: center;
 
   color: rgba(68,68,68, 0.5);
 }
