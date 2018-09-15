@@ -2,7 +2,7 @@ var open = document.querySelector(".pop-up-open");
 var popup = document.querySelector(".pop-up");
 var close = document.querySelector(".pop-up-close");
 
-var form = document.querySelector("form");
+var form = document.querySelector(".feedback-form");
 var login = popup.querySelector("[name=name]");
 var mail = popup.querySelector("[name=mail]");
 var text = popup.querySelector("[name=textarea]");
