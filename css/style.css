@@ -34,7 +34,9 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*Главная навигация меню*/
@@ -45,11 +47,19 @@ img {
 }
 
 .main-navigation {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
-  align-items: center;
+  -webkit-box-align: center;
+
+  -ms-flex-align: center;
+
+          align-items: center;
 
   font-size: 16px;
   line-height: 30px;
@@ -79,8 +89,10 @@ img {
 }
 
 .site-navigation {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   width: 444px;
   margin: 0;
@@ -100,8 +112,10 @@ img {
 }
 
 .user-navigation {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -311,8 +325,11 @@ img {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -386,10 +403,14 @@ img {
 /* Информация про студию */
 
 .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .left-column {
@@ -486,9 +507,15 @@ img {
 }
 
 .our-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
   padding-bottom: 40px;
@@ -513,9 +540,15 @@ img {
 }
 
 .clients-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
   width: 260px;
   height: 90px;
 }
@@ -549,8 +582,11 @@ img {
 }
 
 .footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: absolute;
 
   top: 54px;
@@ -562,7 +598,8 @@ img {
   padding-top: 51px;
   padding-bottom: 47px;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer-contacts h4 {
@@ -598,15 +635,24 @@ img {
 }
 
 .lower-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 68px;
 }
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 260px;
   margin: 0 auto;
   padding: 0;
@@ -614,9 +660,15 @@ img {
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
   width: 80px;
   height: 80px;
   background-color: #e1e1e1;
@@ -637,8 +689,13 @@ img {
 }
 
 .footer-slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
   width: 760px;
   padding-top: 8px;
 }
@@ -673,12 +730,17 @@ img {
   text-align: center;
   padding-top: 78px;
   background-color: #eeeeee;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .catalog-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 54px;
 }
 
@@ -948,8 +1010,12 @@ img {
 /* Сортировка товара */
 
 .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 760px;
   margin-bottom: 45px;
 }
@@ -966,15 +1032,25 @@ img {
 }
 
 .sorting-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 360px;
-  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 272px;
   padding: 0;
   margin: 0;
@@ -1063,8 +1139,11 @@ img {
 /* Каталог готовых шаблонов */
 
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 760px;
   margin: 0;
   padding: 0;
@@ -1073,18 +1152,26 @@ img {
 
 .catalog-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   width: 360px;
   margin-bottom: 35px;
   margin-right: 40px;
   padding-top: 40px;
   list-style: none;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .catalog-item:hover > .catalog-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1121,8 +1208,13 @@ img {
 .catalog-item-info {
   display: none;
   position: absolute;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
   width: 360px;
   height: 230px;
   padding: 0;
@@ -1134,7 +1226,8 @@ img {
   background-color: #eeeeee;
   color: #000000;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .catalog-item-info h3 {
@@ -1171,8 +1264,11 @@ img {
 /* Пагинация */
 
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -1194,7 +1290,8 @@ img {
   background-color: #eeeeee;
   border: 3px solid #eeeeee;
   border-radius: 3px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .pagination-item a:focus,
@@ -1295,15 +1392,22 @@ img {
   font-weight: 500;
   line-height: 45px;
 
+  margin-top: 2px;
   margin-bottom: 24px;
 
   color: #000;
 }
 
 .write-us-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin-bottom: 18px;
   margin-left: 40px;
@@ -1314,8 +1418,11 @@ img {
 }
 
 .feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: -40px;
 }
 
@@ -1340,16 +1447,14 @@ img {
   width: 360px;
   padding-top: 11px;
   padding-bottom: 16px;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .write-us-item textarea {
   width: 760px;
   min-height: 118px;
   padding-top: 10px;
-  padding-left: 15px;
-
-  resize: none;
+  padding-left: 16px;
 }
 
 .write-us-item input::placeholder {
