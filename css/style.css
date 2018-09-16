@@ -1283,9 +1283,11 @@ img {
 
 .pagination-item a {
   display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
   font-weight: 500;
-  padding: 12px 18px;
-  line-height: 18px;
   color: #000000;
   background-color: #eeeeee;
   border-radius: 3px;
@@ -1306,12 +1308,14 @@ img {
 .pagination-item-current a {
   background-color: #ffffff;
   border: 3px solid #eeeeee;
+  line-height: 44px;
 }
 
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
   background-color: #ffffff;
+  box-shadow: none;
 }
 
 .pagination-item-next {
@@ -1319,6 +1323,10 @@ img {
   height: 50px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.pagination-item-next a {
+  min-width: 260px;
 }
 
 /* Поп-ап блок*/
