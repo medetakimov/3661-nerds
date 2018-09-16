@@ -245,21 +245,21 @@ img {
   background-position: 100% 20px;
 }
 
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+.product-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
 }
 
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+.product-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
 }
 
-#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+.product-3:checked ~ .slider-list .slider-item:nth-child(3) {
   display: block;
 }
 
-#product-1:checked ~ .slider-controls .slider-controls-item-1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item-2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item-3::before {
+.product-1:checked ~ .slider-controls .slider-controls-item-1::before,
+.product-2:checked ~ .slider-controls .slider-controls-item-2::before,
+.product-3:checked ~ .slider-controls .slider-controls-item-3::before {
   content: "";
   position: absolute;
   left: 50%;
